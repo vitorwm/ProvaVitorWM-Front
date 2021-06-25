@@ -1,1 +1,37 @@
-<p>cadastrar works!</p>
+<mat-card>
+    <mat-card-title> Cadastrar novo Livro </mat-card-title>
+    <mat-card-content>
+
+        <div class="livro">
+            <mat-card>
+              <mat-card-content>
+                <div class="conteudo-livro">
+                  <mat-form-field>
+                    <mat-label for="data">Nome do livro</mat-label>
+                    <input matInput placeholder="Nome" type="text" name="nome" [(ngModel)]="nome" />
+                  </mat-form-field>
+
+                  <mat-form-field>
+                    <mat-label for="data">ISBN do livro</mat-label>
+                    <input matInput placeholder="ISBN" type="text" name="nome" [(ngModel)]="isbn" />
+                  </mat-form-field>
+
+                  <mat-form-field>
+                    <mat-label for="data">Preço do livro</mat-label>
+                    <input matInput placeholder="Preço" type="number" name="preco" [(ngModel)]="preco" />
+                  </mat-form-field>
+                </div>
+
+              </mat-card-content>
+
+            </mat-card>
+
+          </div>
+
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="cadastrar()">Cadastrar</button>
+        <a mat-raised-button color="primary" routerLink=""> Listar Livros </a>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+  
